@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас | Кав'ярня на Зарванській</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-mug-hot"></i>
+                <span data-i18n="brand_name">Кав'ярня на Зарванській</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link" data-i18n="nav_home">Головна</a>
+                <a href="about.html" class="nav-link active" data-i18n="nav_about">Про нас</a>
+                <a href="services.html" class="nav-link" data-i18n="nav_services">Меню та послуги</a>
+                <a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Галерея</a>
+                <a href="contacts.html" class="nav-link" data-i18n="nav_contacts">Контакти</a>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="uk">UA</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="burger" id="burgerBtn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="about_page_title">Про нашу кав'ярню</h1>
+                <p data-i18n="about_page_subtitle">Острів затишку та тепла на старовинній вулиці Кам'янця-Подільського</p>
+            </div>
+        </section>
+
+        <section class="about-section section-padding">
+            <div class="container about-grid">
+                <div class="about-text-content">
+                    <h2 data-i18n="about_h2">Особлива атмосфера історії та кави</h2>
+                    <p data-i18n="about_p1">«Кав'ярня на Зарванській» — це культове та затишне місце з особливою атмосферою історичного центру Кам'янця-Подільського. Заклад розташований на старовинній вулиці Зарванській, неподалік від Ратуші, і вже багато років радує мешканців та гостей міста вишуканою кавою, ароматними чаями та різноманітними десертами.</p>
+                    <p data-i18n="about_p2">Інтер'єр кав'ярні створений для спокійного відпочинку: тут панує затишок, грає приємна музика, а плетені крісла та старовинні деталі створюють відчуття домашнього тепла. У вихідні дні на гостей часто чекає жива музика та особлива творча атмосфера.</p>
+                    <p data-i18n="about_p3">Фірмовими особливостями закладу є авторські кавові напої, зокрема кава з вогнем, а також широкий асортимент смаколиків. Це ідеальний простір для дружніх посиденок, романтичних зустрічей та неквапливого ранкового смакування якісною кавою в серці старого міста.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/photo-01.svg" alt="Інтер'єр Кав'ярні на Зарванській" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span data-i18n="brand_name">Кав'ярня на Зарванській</span>
+                </a>
+                <p data-i18n="footer_about">Атмосферний заклад у старовинному центрі Кам'янця-Подільського.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_hours_title">Години роботи</h4>
+                <p data-i18n="hours_val">Пн-Нд: 09:00 - 23:00</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_contacts_title">Контакти</h4>
+                <p><i class="fa-solid fa-location-dot"></i> вул. Зарванська, 11, Кам'янець-Подільський</p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+380977969614">+380 97 796 9614</a></p>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:kavyarnya.zarvanskiy@gmail.com">kavyarnya.zarvanskiy@gmail.com</a></p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/kavyarnyanazarvanskiy/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://maps.google.com/?q=Кав'ярня+на+Зарванській+Кам'янець-Подільський" target="_blank" rel="noopener"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear"></span> Кав'ярня на Зарванській. <span data-i18n="rights">Усі права захищені.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
